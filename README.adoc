@@ -2,3 +2,4 @@
 
 include::src/document/quickguide.adoc[]
 
+include::https://raw.githubusercontent.com/AndyHoang/asciidoc-maven/master/src/document/quickguide.adoc[]
