@@ -1,3 +1,6 @@
+:asciidoctor:
+:safe: 0
+:allow-uri-read:
 :includedir: _includes
 
 include::src/document/quickguide.adoc[]
