@@ -1,7 +1,8 @@
 = Quick guide for Asciidoctor using maven
 :toc:
-:toc-placement: preamble
+:toc-placement!:
 
+toc::[]
 
 :numbered:
 == Asciidoctor is a tool chain
