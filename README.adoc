@@ -1,0 +1,4 @@
+:includedir: _includes
+
+include::src/document/quickguide.adoc[]
+
