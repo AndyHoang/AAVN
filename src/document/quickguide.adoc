@@ -1,6 +1,6 @@
 = Quick guide for Asciidoctor using maven
 :toc:
-:source-highligher: coderay
+:toc-placement: preamble
 
 
 :numbered:
@@ -133,5 +133,5 @@ mvn clean compile
 mvn clean compile
 ....
 
-* Complete [pom] file
+* Complete https://github.com/AndyHoang/asciidoc-maven/blob/master/pom.xml[pom] file
 
