@@ -50,21 +50,22 @@ System.out.println("Hello *bold* text").
 * Install maven from http://maven.apache.org/download.cgi[maven]
 * Create a simple project
 [source, bash]
-----
+....
 mvn archetype:generate -DgroupId=group -DartifactId=pjname -DinteractiveMode=false
-----
+....
 * Add dependency to pom file
 [source, xml]
-----
+....
 <groupId>org.asciidoctor</groupId>
 <artifactId>asciidoctor-maven-plugin</artifactId>
 <version>1.5.2</version>
-----
-NOTE: By using this lib, we could config our project to generate html5 type without any other dependencies.
+....
+
+By using this lib, we could config our project to generate html5 type without any other dependencies.
 
 * A finished config pom file could look like this
 [source, xml]
-----
+....
 <build>
   <defaultGoal>process-resources</defaultGoal>
   <plugins>
@@ -94,7 +95,7 @@ NOTE: By using this lib, we could config our project to generate html5 type with
     </plugin>
   </plugins>
 </build
-----
+....
 
 * Build project
 [source, bash]
