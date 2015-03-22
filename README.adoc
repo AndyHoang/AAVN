@@ -1,8 +1,3 @@
-:asciidoctor:
-:safe: 0
-:allow-uri-read:
-:includedir: _includes
 
 include::src/document/quickguide.adoc[]
 
-include::https://raw.githubusercontent.com/AndyHoang/asciidoc-maven/master/src/document/quickguide.adoc[]
