@@ -1,4 +1,10 @@
-:experimental:
+= Asciidoc + Maven
+This maven project is a basic guide to build a Asciidoc file to pdf +
 
+
+== Visit our main file here to read the guide
 include::src/document/quickguide.adoc[]
+
+== Look for contributor
+This project is created to demo for AAVN sharing knowledge. We can some how improve it in to a proper guide.
 
