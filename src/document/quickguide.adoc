@@ -44,6 +44,11 @@ System.out.println("Hello *bold* text").
 
 === Marco
 
+=== Alignment
+[.text-right]
+Here's the text on the right
+
+
 == Using asciidoctor with maven
 
 === To HTML5
