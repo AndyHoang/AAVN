@@ -1,7 +1,7 @@
 = Asciidoc + Maven
 
 == Why this?
-This maven project is a basic guide to build a Asciidoc file to pdf +
+This maven project is a basic guide to build an Asciidoc file to pdf +
 
 == Visit our main file here to read the guide
 include::src/document/quickguide.adoc[]
