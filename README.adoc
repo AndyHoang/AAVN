@@ -7,5 +7,5 @@ This maven project is a basic guide to build a Asciidoc file to pdf +
 include::src/document/quickguide.adoc[]
 
 == Look for contributor
-This project is created to demo for AAVN knowledge sharing. We can some how improve it in to a proper guide.
+This project is created as a demo for AAVN knowledge sharing. We can somehow improve to a proper guide.
 
