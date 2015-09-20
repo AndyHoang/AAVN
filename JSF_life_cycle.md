@@ -7,7 +7,7 @@ The life cycle when a http request to server, and the server response with the p
 [Pic]
 
 
-1git@github.com:AndyHoang/AAVN.git. Restore View
+1. Restore View
 2. Apply Request Values
 3. Process Validations
 4. Update Model Values 5. Invoke Application
@@ -97,7 +97,6 @@ Solution: skip validation.
 `<h:commandButton value="Cancel" action="cancel" immediate="true"/>`
 
 
-**immediate** attribute
 
 ### Immediate Components
 [pic].
@@ -108,7 +107,6 @@ Solution: skip validation.
 ```
 <h:commandLink action="#{localeChanger.germanAction}" immediate="true">
 </h:commandLink>
-
 ```
 
 ### Input Components
