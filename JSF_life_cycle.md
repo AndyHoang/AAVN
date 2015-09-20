@@ -5,6 +5,8 @@ The life cycle when a http request to server, and the server response with the p
 
 ### 6 phases
 [Pic]
+
+
 1. Restore View
 2. Apply Request Values
 3. Process Validations
@@ -33,8 +35,10 @@ The life cycle when a http request to server, and the server response with the p
   Update "local value" to the beans
 
 ### Image Example
-[pic]
-[Explaination]
+[pic].
+
+
+[Explaination].
 
 ### Invoke Application
   Actionlistener, Action method are executed.
@@ -57,7 +61,9 @@ The JSF component generate the event and all the listener will be notified
   After *Process Validations*, the proper listener will trigger the  registered method
 
 ### Image example
-[pic]
+[pic].
+
+
 [Explanation]
 
 ### Action Listener
@@ -86,14 +92,17 @@ Event listeners can affect JSF life cycle in three ways
 ## Manipulate JSF Life Circle
 
 ### Bypassing Validation
-Case: click cancel button
-Solution: skip validation
+Case: click cancel button.
+Solution: skip validation.
 `<h:commandButton value="Cancel" action="cancel" immediate="true"/>`
+
+
 *immediate* attribute
 
 ### Immediate Components
-[pic]
-[Explanation]
+[pic].
+[Explanation].
+
 
 ### Command Components
 ```
