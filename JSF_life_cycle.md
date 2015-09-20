@@ -7,7 +7,7 @@ The life cycle when a http request to server, and the server response with the p
 [Pic]
 
 
-1. Restore View
+1git@github.com:AndyHoang/AAVN.git. Restore View
 2. Apply Request Values
 3. Process Validations
 4. Update Model Values 5. Invoke Application
@@ -17,7 +17,7 @@ The life cycle when a http request to server, and the server response with the p
 
 * First time
   Construct a new component tree
-  Jump to *Render Response*
+  Jump to **Render Response**
 * Postback
   Retrieves the component tree (later parsing data)
 
@@ -28,8 +28,8 @@ The life cycle when a http request to server, and the server response with the p
 
 ### Process Validations
   Validate the "local value"
-  * Passed: *Update Model Value*
-  * Failed: *Render Response*
+  * Passed: **Update Model Value**
+  * Failed: **Render Response**
 
 ### Update Model Values
   Update "local value" to the beans
@@ -58,7 +58,7 @@ The JSF component generate the event and all the listener will be notified
 * System events (JSF 2.0)
 ### Value Change Event
   Fired by editable value holders (`h:inputTex`, `h:seelctOneRadio`)
-  After *Process Validations*, the proper listener will trigger the  registered method
+  After **Process Validations**, the proper listener will trigger the  registered method
 
 ### Image example
 [pic].
@@ -68,7 +68,7 @@ The JSF component generate the event and all the listener will be notified
 
 ### Action Listener
   Fired by action sources (`h:commandButton`)
-  Triggered in *Invoke Aplication*
+  Triggered in **Invoke Aplication**
   * Action listener fired first
   * Action fired later
 
@@ -86,7 +86,7 @@ The JSF component generate the event and all the listener will be notified
 ### More info
 Event listeners can affect JSF life cycle in three ways
 * Let life cycle proceed normally
-* Skip to *Render Response* phase
+* Skip to **Render Response** phase
 * Skip entirely life cycle
 
 ## Manipulate JSF Life Circle
@@ -97,7 +97,7 @@ Solution: skip validation.
 `<h:commandButton value="Cancel" action="cancel" immediate="true"/>`
 
 
-*immediate* attribute
+**immediate** attribute
 
 ### Immediate Components
 [pic].
