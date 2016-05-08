@@ -1,13 +1,25 @@
-docker build -t wildfly-custom .
+# A maven JSF example
 
-docker run -d --name wildfly -p 8080:8080 -p 9990:9990 -v $PWD/target/demo.war:/opt/jboss/wildfly/standalone/deployments/demo.war wildfly-custom
+## Purpose
+* To minify css/javascript file
+* Prove how to improve loading page speed
+* Using a java web application framework
+* Tasks will be triggered by maven
 
-docker stop wildfly && docker rm wildfly
+## Prerequisite
+* Java 7
+* Maven > 3
+* Wildfly > 9
 
-docker run -it --rm  --volumes-from maven-repo --name maven -v $PWD:/usr/src/ -w /usr/src/ maven mvn clean package
+## HOW TO
+* Compile to WAR file and deploy to web server
+  * `mvn package`
+  * deploy `war` file to wildfly
+  * open `localhost:8080/demo`
 
-#why /root/.m2
-docker create -v /root/.m2 --name maven-repo busybox /bin/true
-docker run -it --volumes-from maven-repo maven mvn archetype:generate
+## USING DOCKER
+> look at [docker.sh.sample](docker.sh.sample)
+
+## Explanation
 
 
