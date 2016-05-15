@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  wildfly:
+    image: wildfly-custom
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+    volumes:
+      - $PWD/target/demo.war:/opt/jboss/wildfly/standalone/deployments/demo.war
+
+#TODO trigger docker run with --rm seperately

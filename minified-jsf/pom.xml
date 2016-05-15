@@ -25,9 +25,15 @@
             <configuration>
               <charset>UTF-8</charset>
               <cssSourceDir>resources/css</cssSourceDir>
+              <jsSourceDir>resources/js</jsSourceDir>
               <cssSourceIncludes>
                 <cssSourceInclude>*.css</cssSourceInclude>
               </cssSourceIncludes>
+              <jsSourceFiles>
+                <jsSourceFile>ramda.js</jsSourceFile>
+                <jsSourceFile>app.js</jsSourceFile>
+              </jsSourceFiles>
+              <jsFinalFile>app.js</jsFinalFile>
               <cssFinalFile>app.css</cssFinalFile>
             </configuration>
             <goals>
