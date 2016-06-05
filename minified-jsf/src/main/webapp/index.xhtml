@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://java.sun.com/jsf/core"      
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
-	
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
     <h:head>
         <title>Wow-Presentation</title>
     </h:head>
-    <h:body>
-    	<h:outputScript library="js" name="jquery-1.12.3.min.js"/>
-    	<h:outputScript library="js" name="index.js"/>
-    	<h:outputStylesheet library="css" name="index.css"/>
-        
-    	<h2>What will happen today:</h2>
-    	<h:form>
-    	   <p:outputLabel styleClass="title">Team WOW presentation</p:outputLabel>
-    	   <br/>
-    	   <h:link outcome="normal" value="Normal"/>
-    	   <br/>
-    	   <h:link outcome="minify" value="Minify"/>
-    	</h:form>
+    <h:body style="text-align: center">
+        <h:outputStylesheet library="css" name="button-style.css"/>
+        <h:form>
+            <h:graphicImage library="images" name="title.jpg"/>
+            <br/>
+<!--            <h:link outcome="normal" value="NORMAL" style="margin-left:20px"/>
+            <h:link outcome="minify" value="MINIFY"/>-->
+
+            <div class="hot-container">
+                <p>
+                    <a href="normal.xhrml" class="btn btn-red">NORMAL</a>
+                    <a href="minify.xhtml" class="btn btn-blue">MINIFY</a>
+                </p>
+<!--                <p>
+                    <a href="#" class="btn btn-red">This is a button</a>
+                    <a href="#" class="btn btn-green">This is a button</a>
+                </p>-->
+            </div>
+        </h:form>
+
+
     </h:body>
 </html>
