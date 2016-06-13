@@ -6,6 +6,9 @@
     var img = function (url) {
       return $('<img />', { src: url });
     };
+  var carouselItem = function(url){
+    return '<div class="item"><img src="' + url + '" ></img></div>'
+  }
 
   var Impure = {
     getJSON: _.curry(function(callback, url) {
@@ -40,8 +43,11 @@
   ////////////////////////////////////////////
   // Impure
   //
-  var renderImages = _.compose(Impure.setHtml("body"), images)
-    var app = _.compose(Impure.getJSON(renderImages), url)
+  var renderImages = _.compose(Impure.setHtml("#main"), images)
 
+  var renderImagesCarousel = _.compose(Impure.setHtml(".carousel-inner"), _.compose(_.map(carouselItem),srcs))
+  var app = _.compose(Impure.getJSON(renderImages), url)
+  var appCarousel = _.compose(Impure.getJSON(renderImagesCarousel), url)
+  window.myApp = appCarousel;
     app("cats")
 })(R, $);
