@@ -18,7 +18,7 @@
   * open `localhost:8080/demo`
 
 ## USING DOCKER
-> look at [docker.sh.sample](docker.sh.sample)
+> look at [docker.sh.sample](docker.sample.sh)
 
 ## Explanation
 
