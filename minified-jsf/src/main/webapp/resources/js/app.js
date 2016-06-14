@@ -14,7 +14,6 @@
 
     return '<div class="item active"><img src="' + url + '" ></img></div>'
   }
-
   var Impure = {
     getJSON: _.curry(function(callback, url) {
       $.getJSON(url, callback)
@@ -44,16 +43,25 @@
 
   var images = _.compose(_.map(img), srcs);
 
-
-  ////////////////////////////////////////////
+  //TODO smell
+  var carouselItems = function(urls){
+    if(urls.length > 0){
+      return carouselFirstItem([urls[0]]).concat(_.map(carouselItem, _.slice(1, -1, urls)))
+    }else{
+      return _.map(carouselItem, urls);
+    }
+  }
+  //
+    ////////////////////////////////////////////
   // Impure
   //
   var renderImages = _.compose(Impure.setHtml("#main"), images)
 
-  var renderImagesCarousel = _.compose(Impure.setHtml(".carousel-inner"), _.compose(_.map(carouselItem),srcs))
-  var app = _.compose(Impure.getJSON(renderImages), url)
+  var renderImagesCarousel = _.compose(Impure.setHtml(".carousel-inner"), _.compose(carouselItems, srcs))
+
+  //var app = _.compose(Impure.getJSON(renderImages), url)
   var appCarousel = _.compose(Impure.getJSON(renderImagesCarousel), url)
   window.myApp = appCarousel;
   appCarousel("dog");
-  //app("cats")
+
 })(R, $);
