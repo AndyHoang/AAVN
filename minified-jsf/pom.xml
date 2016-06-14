@@ -32,9 +32,10 @@
               <jsSourceFiles>
                 <jsSourceFile>ramda.js</jsSourceFile>
                 <jsSourceFile>app.js</jsSourceFile>
+                <jsSourceFile>bootstrap.js</jsSourceFile>
               </jsSourceFiles>
-              <jsFinalFile>app.js</jsFinalFile>
-              <cssFinalFile>app.css</cssFinalFile>
+              <jsFinalFile>minified.js</jsFinalFile>
+              <cssFinalFile>minified.css</cssFinalFile>
             </configuration>
             <goals>
               <goal>minify</goal>

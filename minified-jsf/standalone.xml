@@ -357,7 +357,7 @@
                     <location name="/" handler="welcome-content"/>
                     <filter-ref name="server-header"/>
                     <filter-ref name="x-powered-by-header"/>
-                    <filter-ref name="gzipFilter" 
+                    <filter-ref name="gzipFilter"
 						predicate="exists['%{o,Content-Type}'] and regex[pattern='(?:application/javascript|text/css|text/html|text/xml|application/json|image/jpeg)(;.*)?', value=%{o,Content-Type}, full-match=true]"/>
                     <filter-ref name="Vary-header"/>
                 </host>
@@ -411,9 +411,4 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
-    <deployments>
-        <deployment name="demo.war" runtime-name="demo.war">
-            <content sha1="707e239bda465096f058bdbec3abb3853fc3b01a"/>
-        </deployment>
-    </deployments>
 </server>
