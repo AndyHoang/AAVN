@@ -10,6 +10,11 @@
     return '<div class="item"><img src="' + url + '" ></img></div>'
   }
 
+  var carouselFirstItem = function(url){
+
+    return '<div class="item active"><img src="' + url + '" ></img></div>'
+  }
+
   var Impure = {
     getJSON: _.curry(function(callback, url) {
       $.getJSON(url, callback)
@@ -49,5 +54,6 @@
   var app = _.compose(Impure.getJSON(renderImages), url)
   var appCarousel = _.compose(Impure.getJSON(renderImagesCarousel), url)
   window.myApp = appCarousel;
-    app("cats")
+  appCarousel("dog");
+  //app("cats")
 })(R, $);
