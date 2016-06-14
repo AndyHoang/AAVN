@@ -43,7 +43,9 @@
 
   var images = _.compose(_.map(img), srcs);
 
-  //TODO smell
+  /*ES6, a better version
+   * var carouselItems =  (x,...xs) => [carouselFirstItem(x),..._.map(carouselItem, xs)]
+   * */
   var carouselItems = function(urls){
     if(urls.length > 0){
       return carouselFirstItem([urls[0]]).concat(_.map(carouselItem, _.slice(1, -1, urls)))
