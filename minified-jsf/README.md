@@ -2,6 +2,7 @@
 
 ## Purpose
 * To minify css/javascript file
+* To gzip resources by web server's config
 * Prove how to improve loading page speed
 * Using a java web application framework
 * Tasks will be triggered by maven
@@ -19,6 +20,9 @@
 
 ## USING DOCKER
 > look at [docker.sh.sample](docker.sample.sh)
+* No need to install java
+* No need to install maven
+* No need to config wildfly
 
 ## Explanation
 
