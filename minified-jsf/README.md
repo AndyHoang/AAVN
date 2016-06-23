@@ -17,6 +17,7 @@
   * `mvn package`
   * deploy `war` file to wildfly
   * open `localhost:8080/demo`
+  * *Profit*
 
 ## USING DOCKER
 > look at [docker.sh.sample](docker.sample.sh)
